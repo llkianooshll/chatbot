@@ -4,7 +4,6 @@ import { JSDOM } from 'jsdom';
 
 const CHATBOT_SERVER = 'https://kianoosh002.app.n8n.cloud/webhook/5c975944-e1e1-4fd1-8a5d-562fe2a9404a';
 const WORDPRESS_POSTS = 'https://tarhenovin.com/wp-json/wp/v2/posts';
-const WORDPRESS_PAGES = 'https://tarhenovin.com/wp-json/wp/v2/pages';
 
 function htmlToText(html, maxLength = 500) {
   const dom = new JSDOM(html);
