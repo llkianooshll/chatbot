@@ -36,7 +36,6 @@ export async function POST(req) {
 
   try {
     const posts = await fetchContent(WORDPRESS_POSTS, 'پست‌ها');
-    const pages = await fetchContent(WORDPRESS_PAGES, 'صفحات');
     const prompt = `${posts}\n\n${pages}\n\n❓ سوال کاربر:\n${message}`;
 
     const response = await axios.post(CHATBOT_SERVER, { message: prompt, id });
